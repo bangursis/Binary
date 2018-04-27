@@ -26,24 +26,7 @@ namespace Binary_Tree
             return Search(value, root);
         }
 
-        public void Print()
-        {
-            this.Print(root);
-        }
-        private void Print(Node startNode)
-        {
-            if (startNode == null)
-            {
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine(startNode.value);
-                Print(startNode.rightNode);
-                Print(startNode.leftNode);
-            }
-        }
-
+        
         private Node Search(int value, Node startNode)
         {
             if (startNode.value == value)
